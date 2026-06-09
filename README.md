@@ -1,39 +1,17 @@
-# AI/ML Engineering Internship - DevelopersHub Corporation
+# AI/ML Engineering Internship Project - DevelopersHub
 
-## Overview
-This repository contains the completed tasks for the AI/ML Engineering Internship at DevelopersHub Corporation. The portfolio demonstrates core competencies in data preprocessing, exploratory data analysis, time-series forecasting, binary classification, regression, and Natural Language Processing (NLP).
+## Objective
+The objective of this project is to demonstrate technical proficiency across five core AI/ML domains: Natural Language Processing (BERT fine-tuning), Production-ready ML Pipelines, Multimodal Learning (Vision + Tabular), Retrieval-Augmented Generation (RAG), and LLM Prompt Engineering.
 
-## Project Tasks
-Each task is hosted on its own dedicated branch.
+## Methodology / Approach
+- **Task 1 (NLP):** Fine-tuned the `bert-base-uncased` model on the AG News dataset using the Hugging Face `Trainer` API for multi-class classification.
+- **Task 2 (ML Pipeline):** Developed a scikit-learn `Pipeline` to automate preprocessing (Scaling/One-Hot Encoding) and classification (Random Forest) for churn prediction.
+- **Task 3 (Multimodal):** Built a dual-branch Keras model combining a CNN (for images) and an MLP (for tabular data) to predict housing prices via feature fusion.
+- **Task 4 (RAG Chatbot):** Implemented a context-aware system using `sentence-transformers` for embeddings and `FAISS` for vector similarity search, grounded by a Flan-T5 generator.
+- **Task 5 (Auto Tagging):** Engineered prompts for an LLM-based support ticket classifier using few-shot learning logic to categorize technical and billing inquiries.
 
-### 1. [Task 1: Iris Flower EDA]
-- **Objective**: Visualize and inspect the Iris dataset to identify species separability.
-(https://github.com/Faizan0147/DevelopersHub_AI-ML_Tasks/tree/Task-1)
-
-
-### 2. [Task 2: Stock Price Prediction]
-- **Objective**: Predict AAPL closing prices using Random Forest.
-(https://github.com/Faizan0147/DevelopersHub_AI-ML_Tasks/tree/Task-2)
-
-### 3. [Task 3: Heart Disease Classification]
-- **Objective**: Classify heart disease risk with 89% accuracy.
-(https://github.com/Faizan0147/DevelopersHub_AI-ML_Tasks/tree/Task-3)
-
-### 4. [Task 4: General Health Chatbot]
-- **Objective**: Safety-filtered AI assistant using TinyLlama-1.1B.
-(https://github.com/Faizan0147/DevelopersHub_AI-ML_Tasks/tree/task-4)
-
-### 6. [Task 6: House Price Prediction]
-- **Objective**: Predict California housing values using Gradient Boosting.
-(https://github.com/Faizan0147/DevelopersHub_AI-ML_Tasks/tree/Task-6)
-
-## Submission Details
-- **Intern**: Syed Faizan
-- **Deadline**: May 15th, 2026
-- **Organization**: DevelopersHub Corporation
-
-## How to Run Locally
-1. Clone the repository.
-2. Checkout the desired branch: `git checkout [Branch-Name]`
-3. Install dependencies: `pip install -r requirements.txt`
-4. Open the Jupyter Notebook file.
+## Key Results / Observations
+- **BERT Classification:** Achieved high accuracy on the news subset, showing BERT's robust semantic understanding.
+- **Pipeline Automation:** The scikit-learn pipeline successfully exported a deployable `.joblib` model, ensuring consistent data transformations.
+- **Multimodal Fusion:** Combining visual features with structural data resulted in more accurate price estimations than using a single modality.
+- **RAG Stability:** By using a direct FAISS implementation, the chatbot avoided hallucinations by strictly retrieving context from the knowledge base.

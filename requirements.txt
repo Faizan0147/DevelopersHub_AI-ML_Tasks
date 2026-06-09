@@ -1,0 +1,12 @@
+transformers
+datasets
+evaluate
+accelerate
+torch
+scikit-learn
+pandas
+numpy
+tensorflow
+sentence-transformers
+faiss-cpu
+joblib
